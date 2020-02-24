@@ -8,10 +8,10 @@ def pretty_print_nds(nds)
   nil
 end
 
-def print_first_directors_movie_titles(hash)
+def print_first_directors_movie_titles
   count = 0
   while count < :movies.size do
- p hash[0][:movies][count][:title]
+ p directors_database[0][:movies][count][:title]
     count += 1
   end
 end
