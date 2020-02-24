@@ -13,7 +13,7 @@ def print_first_directors_movie_titles(hash)
   while count < :movies.size do
  p hash[0][:movies][count][:title]
     count += 1
-  end 
+  end
 end
 
-print_first_directors_movie_titles(directors_database)
+#print_first_directors_movie_titles(directors_database)
