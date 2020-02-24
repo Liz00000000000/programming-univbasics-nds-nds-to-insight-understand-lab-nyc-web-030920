@@ -8,17 +8,12 @@ def pretty_print_nds(nds)
   nil
 end
 
-def print_first_directors_movie_titles
-    title = [ ]
-    string = "Stephen Spielberg"
-    movies.each_value do |movie|
-      if name.[:movies] == string
-        movie.movies.each_value do | v|
-    title.push(v)
-  end
-    return title
-end
-end
+def print_first_directors_movie_titles(hash)
+  count = 0
+  while count < :movies.size do
+ p hash[0][:movies][count][:title]
+    count += 1
+  end 
 end
 
 print_first_directors_movie_titles(directors_database)
